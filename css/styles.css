@@ -1,10 +1,52 @@
 
+* {
+    box-sizing: border-box;
+}
 
+body {
+background-color: whitesmoke;
+font-family: "Merriweather", serif;
+line-height: 1.2;
+font-size: 1.2rem;
+color: black;
+}
 
+h2 {
+font-size: 1.2rem;
+margin: 0;
+}
 
+.headline {
+    padding: 20px 0;
+    color: rgb(218, 212, 212);
+    background: rgb(30, 11, 102);
+    text-align: center;
+    padding: 25px 0;
+    border-bottom: 4px solid rgb(30, 11, 102);
+}
+
+.newsletter {
+    margin: 0 2rem;
+    color: black;
+    background-color: white;
+}
+
+h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0;
+}
 
 
 @media screen and (min-width: 768px) {
+
+.headline {
+    max-width: 100%;
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+
+}
 
     
 }
