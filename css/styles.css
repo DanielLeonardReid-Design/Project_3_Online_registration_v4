@@ -1,52 +1,218 @@
-
 * {
     box-sizing: border-box;
 }
 
 body {
-background-color: whitesmoke;
-font-family: "Merriweather", serif;
-line-height: 1.2;
-font-size: 1.2rem;
-color: black;
+    background-color: whitesmoke;
+    font-family: "Merriweather", serif;
+    line-height: 1.2;
+    font-size: 1.2rem;
+    color: black;
 }
 
 h2 {
-font-size: 1.2rem;
-margin: 0;
-}
-
-.headline {
-    padding: 20px 0;
-    color: rgb(218, 212, 212);
-    background: rgb(30, 11, 102);
-    text-align: center;
-    padding: 25px 0;
-    border-bottom: 4px solid rgb(30, 11, 102);
-}
-
-.newsletter {
-    margin: 0 2rem;
-    color: black;
-    background-color: white;
-}
-
-h1 {
-    font-size: 24px;
-    text-transform: uppercase;
+    font-size: 1.2rem;
     margin: 0;
 }
 
-
-@media screen and (min-width: 768px) {
-
 .headline {
+    padding: 4px 0;
+    color: rgb(218, 212, 212);
+    background: rgb(50, 38, 97);
+    text-align: center;
     max-width: 100%;
-    margin: auto;
-    flex-direction: column;
-    display: flex;
+    margin: 0 0;
+    border-bottom: 4px solid rgb(50, 38, 97);
+    font-size: 0.6em;
+}
+
+.newsletter {
+    margin: 0 1.1rem;
+    color: black;
+    background-color: white;
+    text-align: center;
+    padding: 25px 0;
+    border-bottom: 4px solid rgb(50, 38, 97);
 
 }
 
-    
+
+h1 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin: 0;
+    background-color: rgb(50, 38, 97);
+}
+
+#contact-info p > input {
+    width: 100%;
+}
+
+#contact-info p {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+footer p {
+    padding: 10px 2px;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #545557;
+    text-align: center;
+  }
+
+.p-label {
+    align-items: center;
+    display: flex;
+    margin: 0.2rem 0;
+    font-size: 1.0rem;
+}
+
+.zip-label {
+    font-size: 1.0rem;
+    max-width: 50%;
+}
+
+#zip {
+    max-width: 50%;
+}
+
+label {
+    color: #6a6d70;
+}
+
+
+
+.newsletter-intro {
+    margin: 0.4rem 0;
+    font-size: 0.98rem;
+}
+ 
+header {
+    background-color: white;
+    text-align: center;
+
+}
+
+.newsletter > p,
+::placeholder {
+    color: rgb(190, 181, 181);
+}
+
+
+.copyright-footer {
+    text-align: center;
+    margin-bottom: 40px;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(117, 114, 114);
+}
+
+fieldset {
+    flex-direction: column;
+    display: flex;
+}
+
+fieldset legend {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 20px 0;
+    float: left;
+}
+
+.shadedtext {
+    box-shadow: 1px 1px 5px 1px grey;
+    background-color: rgb(197, 194, 194);
+    padding: 0 0 25px 0;
+}
+
+/** box-shadow alternative 
+
+.shadedtext  {
+    box-shadow: inset 2.5px 2.5px 8px #adabab, 0px 0px 10px #eeecec; 
+}  */
+
+button {
+    margin: auto;
+    padding: 30px;
+    width: 100%;
+    margin-bottom: 25px;
+    outline: none;
+    border: none;
+    background: rgb(20, 23, 177);
+    border-radius: 3px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 12px #6399d6, 0px 0px 10px #1e2ad6;
+}
+
+@media (min-width: 768px) {
+.headline {
+    max-width: 100%;
+    flex-direction: column;
+    display: flex;
+    font-size: 0.4em;
+    padding: 5px 0;
+    align-items: center;
+}
+
+#contact-info label {
+    margin: auto 0;
+    max-width: 250px;
+    width: 250px;
+}
+
+#contact-info .p-label {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-direction: row;
+}
+ 
+fieldset {
+    padding-top: 1.6rem;
+    border-top: 0 solid white;
+    border-right: 0 solid white;
+    border-left: 0 solid white;
+    border-bottom: 4px solid rgb(50, 38, 97);
+}
+
+fieldset {
+    flex-direction: column;
+    display: flex;
+}
+
+.zip-label {
+    font-size: 1.0rem;
+    align-items: center;
+    max-width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main,
+header,
+footer {
+    flex-direction: column;
+    max-width: 762px;
+    display: flex;
+    margin: 0rem 15rem;
+}
+
+#zip {
+    margin-right: 190px;
+    max-width: 30%;
+}
+
+.shadedtext {
+    box-shadow: 1px 1px 5px 1px grey;
+    background-color: rgb(197, 194, 194);
+    padding: 10px 25px 25px 10px;
+}
+
+.p-label {
+    margin: 1.1rem 0;
+}
+
 }

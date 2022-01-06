@@ -13,83 +13,129 @@
 </head>
 
 <body>
-<div class="headline">
-    <h1>THE CODE REVIEW</h1>
-</div>
+    <div class="headline">
+        <h1>THE CODE REVIEW</h1>
+    </div>
 
-<header>
-<div class="newsletter">
-<h2>Signup for our Newsletter</h2>
-<p class="newsletter-intro">Get the latest news on how your code is doing right in your inbox</p>
-</div>
-</header>
+    <div class="body-div">
 
+    <header class="newsletter-header">
+        <div class="newsletter">
+            <h2>Signup for our Newsletter</h2>
+            <p class="newsletter-intro">Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+    </header>
+
+<main>
 
     <form action="index.html" method="post">
     
-        <fieldset>
+        <fieldset id="contact-info">
         <legend>
         <h2>Contact Information</h2>
         </legend>
 
-
-        <div class="contact-infor">
-        <p><label for="name">Full Name:</label>
-        <input type="text" id="name" name="user_name">
+        <p class="p-label">
+        <label for="name">FULL NAME:</label>
+        <input type="text" id="name" name="user_name" class="shadedtext" placeholder="Required" required>
         </p>
 
-        <p>
-        <label for="streetaddress">Street Address:</label>
-        <input type="text" id="streetaddress" name="user_streetaddress">
+        <p class="p-label">
+        <label for="email">E-mail ADDRESS:</label>
+        <input type="email" id="email" name="user_email" class="shadedtext" placeholder="Required" required>
         </p>
 
-        <p>
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="user_phonenumber">
+        <p class="p-label">
+        <label for="phone">PHONE NUMBER:</label>
+        <input type="tel" id="phone" name="user_phonenumber" class="shadedtext">
         </p>
 
-        <p>
-        <label for="city">City:</label>
-        <input type="text" id="city" name="user_city">
+        <p class="p-label">
+        <label for="streetaddress">STREET ADDRESS:</label>
+        <input type="text" id="streetaddress" name="user_streetaddress" class="shadedtext">
         </p>
 
-        <p>
-        <label for="state">State:</label>
-        <select id="state" name="user_state">
-        </select></p>
-
-        <p>
-        <label for="zip">Zip Code:</label>
-        <input type="number" id="zip" name="user_zip">
+        <p class="p-label">
+        <label for="city">CITY:</label>
+        <input type="text" id="city" name="user_city" placeholder="CITY" class="shadedtext">
         </p>
 
-        <label for="bio">Biography:</label>
-        <textarea id="bio" name="user_bio"></textarea>
+        <p class="p-label">
+        <label for="state">STATE:</label>
+        <select class="shadowtext" id="state" name="user_state">
         
-        <button type="submit">SIGN UP</button>
-      
-        </div>
+        <option value=" ">-- CHOOSE STATE: --</option>
+        <option value="AL">ALABAMA</option>
+        <option value="AK">ALASKA</option>
+        <option value="AZ">ARIZONA</option>
+        <option value="AR">ARKANSAS</option>
+        <option value="CA">CALIFORNIA</option>
+        <option value="CO">COLORADO</option>
+        <option value="CT">CONNECTICUT</option>
+        <option value="DE">DELAWARE</option>
+        <option value="DC">WASHINGTON D.C.</option>
+        <option value="FL">FLORIDA</option>
+        <option value="GA">GEORGIA</option>
+        <option value="HI">HAWAII</option>
+        <option value="ID">IDAHO</option>
+        <option value="IL">ILLINOIS</option>
+        <option value="IN">INDIANA</option>
+        <option value="IA">IOWA</option>
+        <option value="KS">KANSAS</option>
+        <option value="KY">KENTUCKY</option>
+        <option value="LA">LOUISIANA</option>
+        <option value="ME">MAINE</option>
+        <option value="MD">MARYLAND</option>
+        <option value="MA">MASSACHUSETTS</option>
+        <option value="MI">MICHIGAN</option>
+        <option value="MN">MINNESOTA</option>
+        <option value="MS">MISSISSIPPI</option>
+
+        </select></p>
+        <p class="p-label">
+        <label for="zip">ZIP CODE:</label>
+        <input type="number" name="user_zip" id="zip" class="shadedtext">
+        </p>
       </fieldset>
 
-      <fieldset>
+      <fieldset ID="newsletter">
 
-
-
-
-      </fieldset>
         <legend>NEWSLETTER</legend>
 
-        <div class="newsletter-content">
-            <div class="selection">
+        <label class="newsletter-content">Select the newsletters you would like to receive.</label>
 
+        <p class="checkbox-option"><input type="checkbox" value="html-news" id="html-news" name="newsletter">
+            <label for="html-news" class="inline">HTML News</label></p>
 
-            </div>
+        <p class="checkbox-option"><input type="checkbox" value="csss-news" id="css-news" name="newsletter">
+            <label for="css-news" class="inline">CSS News</label></p>
 
-        </div>
+        <p class="checkbox-option"><input type="checkbox" value="js-news" id="js-news" name="newsletter">
+            <label for="js-news" class="inline">Javascript News</label></p>
+        
+        <p></p>
+        <label class="newsletter-content">Newsletter format.</label>
 
+        <p class="checkbox-option"><input type="radio" value="html-format" id="html-format" name="format">
+            <label for="html-format" class="inline">HTML</label></p>
+                    
+        <p class="checkbox-option"><input type="radio" value="plaintext-format" id="plaintext-format" name="format">
+            <label for="plaintext-format" class="inline">Plain Text</label></p>          
 
+<p></p>
+        <label for="other-topics" class="newsletter-content">Other topics you would like to hear from:</label>
+        <textarea id="other-topics" class="shadedtext" name="user_topics"></textarea>
+        
+            
+    </fieldset>
+
+        <p><button type="submit">SIGN UP</button>
+            
     </form>
+        </main>
+        <footer class="copyright-footer">
+        <p colspan="1">Copyright The Code Review</p></footer>
     
-
-  </body>
-</html>
+    </div>
+    </body>
+    </html>
