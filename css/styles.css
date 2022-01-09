@@ -141,11 +141,11 @@ button {
     margin-bottom: 25px;
     outline: none;
     border: none;
-    background: rgb(20, 23, 177);
+    background: rgb(111, 113, 231);
     border-radius: 3px;
     font-size: 1.2em;
     text-transform: uppercase;
-    box-shadow: 2px 2px 12px #6399d6, 0px 0px 10px #1e2ad6;
+    box-shadow: 2px 2px 12px #879cb4, 0px 0px 10px #b6bae7;
 }
 
 @media (min-width: 768px) {
