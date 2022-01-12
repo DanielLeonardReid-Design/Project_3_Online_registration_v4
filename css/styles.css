@@ -2,46 +2,79 @@
     box-sizing: border-box;
 }
 
+
+main h2,
+main h3 {
+    text-align: center;
+}
+
+form {
+    border-top: 2px solid #2d3945;
+}
+
+main,
+footer {
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 95%;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+
+main {
+    border-radius: 3px;
+    background-color: white;
+}
+
 body {
-    background-color: whitesmoke;
+    background-color: white;
     font-family: "Merriweather", serif;
-    line-height: 1.2;
-    font-size: 1.2rem;
+    max-width: 100%;
     color: black;
 }
 
 h2 {
-    font-size: 1.2rem;
+    color: #2d3945;
     margin: 0;
 }
 
-.headline {
-    padding: 4px 0;
-    color: rgb(218, 212, 212);
-    background: rgb(50, 38, 97);
+h3 {
+    color: gray;
     text-align: center;
-    max-width: 100%;
-    margin: 0 0;
-    border-bottom: 4px solid rgb(50, 38, 97);
-    font-size: 0.6em;
+    font-size: 16px;
+}
+
+fieldset {
+    border: 0 solid white;
+    background-color: rgb(173, 173, 235);
 }
 
 .newsletter {
-    margin: 0 1.1rem;
-    color: black;
-    background-color: white;
-    text-align: center;
-    padding: 25px 0;
-    border-bottom: 4px solid rgb(50, 38, 97);
-
+   display: block;
+   background-color: rgb(166, 166, 223);
 }
 
+.newsletter legend {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.newsletter .form-description {
+    display: block;
+    margin: 20px 0;
+}
 
 h1 {
-    font-size: 1.2em;
-    text-transform: uppercase;
-    margin: 0;
     background-color: rgb(50, 38, 97);
+    color: #ffff;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 #contact-info p > input {
@@ -69,37 +102,28 @@ footer p {
     font-size: 1.0rem;
 }
 
-.zip-label {
-    font-size: 1.0rem;
-    max-width: 50%;
+.zip {
+    padding-bottom: 35px;
+    border-bottom: 1px solid #2d3945;
 }
 
-#zip {
-    max-width: 50%;
+.zip input {
+    width: 50%;
 }
 
 label {
     color: #6a6d70;
 }
 
-
-
 .newsletter-intro {
     margin: 0.4rem 0;
     font-size: 0.98rem;
 }
  
-header {
-    background-color: white;
-    text-align: center;
-
-}
-
 .newsletter > p,
 ::placeholder {
     color: rgb(190, 181, 181);
 }
-
 
 .copyright-footer {
     text-align: center;
@@ -110,21 +134,16 @@ header {
     color: rgb(117, 114, 114);
 }
 
-fieldset {
-    flex-direction: column;
-    display: flex;
-}
-
 fieldset legend {
     font-weight: 600;
     font-size: 1.2rem;
     padding: 20px 0;
-    float: left;
+    
 }
 
 .shadedtext {
     box-shadow: 1px 1px 5px 1px grey;
-    background-color: rgb(197, 194, 194);
+    background-color: rgb(216, 213, 213);
     padding: 0 0 25px 0;
 }
 
@@ -148,6 +167,58 @@ button {
     box-shadow: 2px 2px 12px #879cb4, 0px 0px 10px #b6bae7;
 }
 
+:focus {
+    outline: none;
+    outline: 5px solid #5b7fa3;
+    transition-duration: 0.5s;
+}
+
+:focus {
+    outline: 5px solid #497097;
+}
+
+.flex-form {
+    flex-direction: column;
+    margin: 15px 0;
+    display: flex;
+}
+
+.flex-form > input,
+select,
+textarea {
+    height: 35px;
+    background-color: rgb(216, 213, 213);
+    border: 1px solid white;
+    margin-top: 10px;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 5px 8px 12px 0;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border: 2px solid #2D3945;
+}
+
+textarea {
+    height: 100px;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    border: none;
+    transition: ease-in-out .5s;
+}
+
 @media (min-width: 768px) {
 .headline {
     max-width: 100%;
@@ -156,6 +227,15 @@ button {
     font-size: 0.4em;
     padding: 5px 0;
     align-items: center;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+main,
+footer {
+    width: 70%;
 }
 
 #contact-info label {
@@ -169,50 +249,54 @@ button {
     flex-direction: row;
     flex-direction: row;
 }
- 
-fieldset {
-    padding-top: 1.6rem;
-    border-top: 0 solid white;
-    border-right: 0 solid white;
-    border-left: 0 solid white;
-    border-bottom: 4px solid rgb(50, 38, 97);
-}
 
-fieldset {
-    flex-direction: column;
+header {
+    width: 100%;
+    height: 80px;
     display: flex;
+    background-color: rgb(50, 38, 97);
+    justify-content: center;
+    margin-bottom: 20px; 
 }
 
-.zip-label {
-    font-size: 1.0rem;
-    align-items: center;
-    max-width: 50%;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-main,
-header,
-footer {
-    flex-direction: column;
-    max-width: 762px;
-    display: flex;
-    margin: 0rem 15rem;
-}
-
-#zip {
-    margin-right: 190px;
-    max-width: 30%;
+header h1 {
+    align-self: center;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .shadedtext {
     box-shadow: 1px 1px 5px 1px grey;
-    background-color: rgb(197, 194, 194);
+    background-color: rgb(216, 213, 213);
     padding: 10px 25px 25px 10px;
 }
 
 .p-label {
     margin: 1.1rem 0;
+}
+
+.flex-form {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.zip input {
+    max-width: 25% !Important;
+    margin-right: 50%;
+}
+
+input,
+select {
+    max-width: 75%;
+    flex-grow: 1;
+}
+
+.flex-form {
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 }

@@ -13,54 +13,47 @@
 </head>
 
 <body>
-    <div class="headline">
+    <header>
         <h1>THE CODE REVIEW</h1>
-    </div>
-
-    <div class="body-div">
-
-    <header class="newsletter-header">
-        <div class="newsletter">
-            <h2>Signup for our Newsletter</h2>
-            <p class="newsletter-intro">Get the latest news on how your code is doing right in your inbox</p>
-        </div>
     </header>
 
-<main>
-
+  <main>
+        <h2>Signup for our Newsletter</h2>
+            <h3>Get the latest news on how your code is doing right in your inbox</h3>
+        
     <form action="index.html" method="post">
     
-        <fieldset id="contact-info">
+        <fieldset>
         <legend>
-        <h2>Contact Information</h2>
+        <span>Contact Information</span>
         </legend>
 
-        <p class="p-label">
+        <div class="flex-form">
         <label for="name">FULL NAME:</label>
         <input type="text" id="name" name="user_name" class="shadedtext" placeholder="Required" required>
-        </p>
+        </div>
 
-        <p class="p-label">
-        <label for="email">E-mail ADDRESS:</label>
+        <div class="flex-form">
+        <label for="email">E-MAIL ADDRESS:</label>
         <input type="email" id="email" name="user_email" class="shadedtext" placeholder="Required" required>
-        </p>
+        </div>
 
-        <p class="p-label">
+        <div class="flex-form">
         <label for="phone">PHONE NUMBER:</label>
         <input type="tel" id="phone" name="user_phonenumber" class="shadedtext">
-        </p>
+        </div>
 
-        <p class="p-label">
+        <div class="flex-form">
         <label for="streetaddress">STREET ADDRESS:</label>
         <input type="text" id="streetaddress" name="user_streetaddress" class="shadedtext">
-        </p>
+        </div>
 
-        <p class="p-label">
+        <div class="flex-form">
         <label for="city">CITY:</label>
         <input type="text" id="city" name="user_city" placeholder="CITY" class="shadedtext">
-        </p>
+        </div>
 
-        <p class="p-label">
+        <div class="flex-form">
         <label for="state">STATE:</label>
         <select class="shadowtext" id="state" name="user_state">
         
@@ -118,11 +111,13 @@
         <option value="WI">WISCONSIN</option>
         <option value="WY">WYOMING</option>
 
-        </select></p>
-        <p class="p-label">
+        </select></div>
+
+        <div class="flex-form zip">
         <label for="zip">ZIP CODE:</label>
         <input type="number" name="user_zip" id="zip" class="shadedtext">
-        </p>
+        </div>
+
       </fieldset>
 
       <fieldset ID="newsletter">
@@ -160,9 +155,11 @@
             
     </form>
         </main>
-        <footer class="copyright-footer">
-        <p colspan="1">Copyright The Code Review</p></footer>
+
+        <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
     
-    </div>
+
     </body>
     </html>
